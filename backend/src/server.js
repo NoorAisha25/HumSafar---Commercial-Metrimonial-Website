@@ -13,7 +13,7 @@ async function start() {
 
   const httpServer = createServer(app);
   const io = new Server(httpServer, {
-    cors: { origin: process.env.CLIENT_URL || "http://localhost:5173" },
+    cors: { origin: process.env.CLIENT_URL || "https://hum-safar-commercial-metrimonial-we.vercel.app/" },
   });
 
   registerChatSocket(io);
