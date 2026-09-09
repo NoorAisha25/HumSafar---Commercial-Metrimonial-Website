@@ -35,7 +35,6 @@ npm run dev   # http://localhost:5173
 |---|---|
 | Register / Login (JWT) | `POST /api/auth/register`, `POST /api/auth/login`, `GET /api/auth/me` |
 | Google Sign-In | `POST /api/auth/google` |
-| Email OTP verification | `POST /api/auth/send-otp`, `POST /api/auth/verify-otp` |
 | Profile + Cloudinary photo upload | `GET /api/profile` (own), `GET /api/profile/:id` (any), `PATCH /api/profile`, `POST /api/profile/photo` |
 | Discover / search with match % | `GET /api/discover` (auth), `GET /api/discover/featured` (public) |
 | Send / accept / decline interest | `POST /api/interests`, `PATCH /api/interests/:id`, `GET /api/interests/received`, `GET /api/interests/sent`, `GET /api/interests/matches` |
@@ -45,8 +44,7 @@ npm run dev   # http://localhost:5173
 | Live counters | `GET /api/stats` (public) |
 
 One MongoDB database, multiple collections (`users`, `interests`,
-`favorites`, `messages`, `events`) — no microservices split, matching the
-"minimum viable stack" you originally specced out.
+`favorites`, `messages`, `events`) — no microservices split
 
 ## Design notes
 
